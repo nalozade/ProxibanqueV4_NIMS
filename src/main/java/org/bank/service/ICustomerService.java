@@ -3,7 +3,13 @@ package org.bank.service;
 import java.util.List;
 
 import org.bank.entity.Customer;
-
+/**
+ * Interface ICustomerService regroupant toutes les signatures de méthodes
+ * concernant le client
+ * 
+ * @author Nawal, Imane, Samirath et Maxime
+ *
+ */
 public interface ICustomerService {
 	
 	

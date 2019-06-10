@@ -20,7 +20,12 @@ import javax.persistence.OneToOne;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-
+/**
+ * La classe Account est un javabean elle est canditate a etre persitée
+ * elle est classe mère de CurrentAccount et SavingsAccount
+ * 
+ *  @author Nawal, Imane, Samirath et Maxime
+ */
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "Account_Type", discriminatorType = DiscriminatorType.STRING)

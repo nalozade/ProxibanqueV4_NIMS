@@ -16,6 +16,12 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
+/**
+ * La classe Advisor est un javabean qui regroupe les informations concernant un conseiller
+ * son id,nom,prenom,login et password 
+ * 
+ * @author Nawal, Imane, Samirath et Maxime
+ */
 @Entity
 public class Advisor{
 

@@ -16,6 +16,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Classe RestCustomerController qui regroupe toutes les methodes CRUD du
+ * webservice Rest concernant un client
+ * 
+ * @author Nawal, Imane, Samirath et Maxime
+ *
+ */
 @RestController
 @RequestMapping("/customers")
 public class RestCustomerController {

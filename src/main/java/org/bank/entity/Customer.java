@@ -20,6 +20,13 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
+/**
+ * La classe Customer est un javabean qui regroupe toutes les informations
+ * concernant un client elle est classe mère de la classe Enterprise et la
+ * classe Particular
+ * 
+ * @author Nawal, Imane, Samirath et Maxime
+ */
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "Customer_Type", discriminatorType = DiscriminatorType.STRING)
@@ -35,7 +42,6 @@ public class Customer {
 	private String city;
 	private String telephone;
 	private String email;
-	//private String type; => si on annule l'héritage pour particulier et entreprise 
 
 	// @JsonBackReference
 	@JsonIgnore

@@ -7,7 +7,14 @@ import org.bank.entity.Account;
 import org.bank.repository.IAccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+/**
+ * Classe qui implémente l'interface IAccountService qui permet de faire le lien
+ * entre la BD et les signatures de methodes de l'interface de la couche service
+ *
+ *
+ *  @author Nawal, Imane, Samirath et Maxime
+ *
+ */
 @Service
 public class AccountServiceImpl implements IAccountService {
 

@@ -6,7 +6,14 @@ import org.bank.entity.Advisor;
 import org.bank.repository.IAdvisorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+/**
+ * Classe qui implémente l'interface IAdvisortService qui permet de faire le lien
+ * entre la BD et les signatures de methodes de l'interface de la couche service
+ *
+ *
+ *  @author Nawal, Imane, Samirath et Maxime
+ *
+ */
 @Service
 public class AdvisorServiceImpl implements IAdvisorService {
 

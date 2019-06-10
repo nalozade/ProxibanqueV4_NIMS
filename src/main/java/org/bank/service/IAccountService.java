@@ -4,6 +4,13 @@ import java.util.List;
 
 import org.bank.entity.Account;
 
+/**
+ * Interface IAccountService regroupant toutes les signatures de méthodes
+ * concernant le compte
+ * 
+ * @author Nawal, Imane, Samirath et Maxime
+ *
+ */
 public interface IAccountService {
 
 	public void createAccount(Account account);
@@ -30,21 +37,19 @@ public interface IAccountService {
 	 */
 	public boolean AuditEnterprise(List<Account> listAcc);
 
-
-
-
 	/**
+	 * Methode qui permet de trouver un compte
 	 * 
 	 * @param idClient
 	 * 
 	 */
 	public Account getAccountById(Long idClient);
-	
+
 	/**
-	 * Generate a Unique Account Nubmber
+	 * methode qui permet de generer un numero de compte unique
 	 * 
-	 * 
+	 * @param nom, prenom
 	 */
-	public String generateAccountNumber(String nom,String prenon);
+	public String generateAccountNumber(String nom, String prenon);
 
 }

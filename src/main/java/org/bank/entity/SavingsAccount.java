@@ -1,33 +1,26 @@
 package org.bank.entity;
 
-
-
-import java.util.Date;
-
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-
+/**
+ * La classe SavingsAccount herite de la classe Account elle sera définie dans la
+ * BD comme type de la table Account
+ * 
+ * @author Nawal, Imane, Samirath et Maxime
+ */
 @Entity
 @DiscriminatorValue("SavingsAcc")
-public class SavingsAccount extends Account{
+public class SavingsAccount extends Account {
 
 	private static final double INTERESTRATE = 0.03;
-
-	// Constructeur
 
 	public SavingsAccount() {
 	}
 
-	
-	
-	// Getters and setters
-
 	public SavingsAccount(String accountNumber, double balance, String creationDate) {
 		super(accountNumber, balance, creationDate);
-		
+
 	}
-
-
 
 	public static double getInterestrate() {
 		return INTERESTRATE;

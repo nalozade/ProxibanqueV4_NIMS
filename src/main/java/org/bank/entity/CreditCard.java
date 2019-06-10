@@ -1,23 +1,24 @@
 package org.bank.entity;
 
-import java.io.Serializable;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
+/**
+ * La classe CreditCard est un javabean qui regroupe les informations concernant
+ * un carte de credit son id et son type
+ * 
+ * @author Nawal, Imane, Samirath et Maxime
+ */
 @Entity
-public class CreditCard{
+public class CreditCard {
 
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long idCard;
 	private String type;
-	
+
 //	@OneToOne(mappedBy = "creditCard", cascade = { CascadeType.PERSIST, CascadeType.REMOVE })
 //	private Account account;
 
@@ -56,7 +57,4 @@ public class CreditCard{
 		this.type = type;
 	}
 
-
-	
-	
 }

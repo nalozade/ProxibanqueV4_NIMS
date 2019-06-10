@@ -15,7 +15,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-
+/**
+ * Classe RestAdvisorController qui regroupe toutes les methodes CRUD du
+ * webservice Rest concernant un conseiller
+ * 
+ * @author Nawal, Imane, Samirath et Maxime
+ *
+ */
 @RestController
 @RequestMapping("/advisors")
 public class RestAdvisorController {

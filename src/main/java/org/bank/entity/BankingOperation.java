@@ -1,7 +1,5 @@
 package org.bank.entity;
 
-import java.util.Date;
-
 import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
@@ -16,6 +14,12 @@ import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
+/**
+ * La classe BankingOperation est un javabean, elle est canditate a etre
+ * persitée elle est classe mère de Credit et Debit
+ * 
+ * @author Nawal, Imane, Samirath et Maxime
+ */
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "Operation_Type", discriminatorType = DiscriminatorType.STRING)
@@ -28,9 +32,10 @@ public class BankingOperation {
 	private String operationDate;
 
 	@JsonBackReference
-	@ManyToOne(cascade = { CascadeType.PERSIST})
-    @JoinColumn(name = "account_id")
+	@ManyToOne(cascade = { CascadeType.PERSIST })
+	@JoinColumn(name = "account_id")
 	private Account account;
+
 	public BankingOperation() {
 		super();
 	}
@@ -78,7 +83,5 @@ public class BankingOperation {
 		return "BankingOperation [operationNumber=" + operationNumber + ", amount=" + amount + ", operationDate="
 				+ operationDate + ", account=" + account + "]";
 	}
-
-
 
 }

@@ -10,6 +10,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+/**
+ * La classe Manager est un javabean qui regroupe les informations concernant un
+ * manager son id,nom,prenom,login et password
+ * 
+ * @author Nawal, Imane, Samirath et Maxime
+ */
 @Entity
 public class Manager {
 	@Id
@@ -35,8 +41,6 @@ public class Manager {
 		this.password = password;
 		this.listAdvisor = listAdvisor;
 	}
-	
-	
 
 	public Manager(String lastName, String firstName, String login, String password) {
 		super();

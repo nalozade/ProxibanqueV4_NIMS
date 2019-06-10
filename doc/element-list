@@ -1,0 +1,5 @@
+org.bank
+org.bank.entity
+org.bank.repository
+org.bank.restcontroller
+org.bank.service
