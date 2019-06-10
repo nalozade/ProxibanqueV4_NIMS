@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ICustomerRepository extends JpaRepository<Customer, Long>{
 
-	 public List<Customer> findCostumersByKeyword(String keyWord);
+	// public List<Customer> findCostumersByKeyword(String keyWord);
 	
 }

@@ -81,8 +81,8 @@ public class CustomerServiceImpl implements ICustomerService {
 
 	}
 
-	@Override
-	public List<Customer> findCustomers(String keyword) {
-		return iCustomerRepo.findCostumersByKeyword(keyword);
-	}
+//	@Override
+//	public List<Customer> findCustomers(String keyword) {
+//		return iCustomerRepo.findCostumersByKeyword(keyword);
+//	}
 }

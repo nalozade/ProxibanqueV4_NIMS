@@ -17,5 +17,5 @@ public interface ICustomerService {
 
 	public void updateCustomer(Customer updatedCustomer);
 	
-	public List<Customer> findCustomers(String keyWord);
+	//public List<Customer> findCustomers(String keyWord);
 }
